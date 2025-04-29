@@ -1,0 +1,42 @@
+.button {
+    padding-inline: 19px;
+    padding-block: 13px;
+    background: linear-gradient(5deg, #9356DC, #FF79DA);
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border: none;
+    color: #FFFF;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 27px;
+    font-weight: 500;
+}
+
+.button-container {
+    text-align: center;
+    padding-bottom: 40px;
+
+
+    .button-restau {
+        width: 186px;
+        height: 50px;
+        background: linear-gradient(5deg, #9356DC, #FF79DA);
+        border-radius: 25px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        border: none;
+        color: #FFFF;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 500;
+    }
+}
+
+@media (min-width: 765px) {
+    .button {
+        margin-bottom: 30px;
+    }
+
+    .button-container {
+        padding-top: 30px;
+    }
+}

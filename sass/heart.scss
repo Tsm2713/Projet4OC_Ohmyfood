@@ -1,0 +1,61 @@
+.favorite-container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.favorite-container-index {
+    position: absolute;
+    bottom: 52px;
+    right: 50px;
+}
+
+
+.favorite-checkbox {
+    display: none;
+}
+
+.favorite-label {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    .empty-heart,
+    .filled-heart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 24px;
+        transition: opacity 0.3s ease;
+    }
+
+    .empty-heart {
+        color: black;
+    }
+
+    .filled-heart {
+        background: linear-gradient(5deg, #9356DC, #e067be);
+        background-clip: text; //sert à garder la couleur du dégradé dans le coeur et non sur le conteneur
+        color: transparent;
+        opacity: 0;
+    }
+}
+
+.favorite-checkbox:checked+.favorite-label {
+    .filled-heart {
+        opacity: 1;
+    }
+
+    .empty-heart {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 765px) {
+    .favorite-container {
+        margin-right: 0px;
+    }
+  }

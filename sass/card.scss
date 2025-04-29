@@ -1,0 +1,90 @@
+  .menu-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      background-color: white;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+      input[type="checkbox"] {
+          display: none;
+      }
+
+      .item-label {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: #fff;
+          border-radius: 15px;
+          padding: 15px;
+          overflow: hidden;
+          position: relative;
+          cursor: pointer;
+
+
+          .description {
+              display: flex;
+              flex-direction: column;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              text-align: left;
+
+
+              .item-title {
+                  font-weight: 500;
+                  font-size: 18px;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+                  margin-bottom: 5px;
+              }
+
+              .item-details {
+                  font-size: 15px;
+                  font-weight: 300;
+                  text-overflow: ellipsis;
+                  overflow: hidden;
+              }
+          }
+
+          .price {
+              font-weight: 700;
+              margin-right: 5px;
+              transition: transform 0.3s ease;
+              font-size: 15px;
+              margin-top: 25px;
+          }
+
+          .checkmark {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #99e2d0;
+              color: #fff;
+              width: 0;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              right: 0;
+              border-radius: 0 15px 15px 0;
+              opacity: 0;
+              transition: width 0.3s ease, opacity 0.3s ease;
+
+
+              .checkmark i {
+                  font-size: 24px;
+              }
+          }
+        }
+
+          input[type="checkbox"]:checked+.item-label .checkmark {
+              width: 60px;
+              opacity: 1;
+          }
+
+          input[type="checkbox"]:checked+.item-label .price {
+              transform: translateX(-60px);
+          }
+      
+  }
