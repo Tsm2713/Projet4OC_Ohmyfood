@@ -28,6 +28,13 @@
         font-size: 16px;
         cursor: pointer;
         font-weight: 500;
+
+    }
+
+    .button-restau:hover {
+        background: linear-gradient(to bottom, #ff9ae6, #a277e0);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+
     }
 }
 

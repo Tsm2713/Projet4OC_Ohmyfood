@@ -28,6 +28,10 @@
   cursor: pointer;
   font-weight: 500;
 }
+.button-container .button-restau:hover {
+  background: linear-gradient(to bottom, #ff9ae6, #a277e0);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
 
 @media (min-width: 765px) {
   .button {
@@ -81,7 +85,6 @@ footer .footer-nav ul li a:hover {
 
 @media (min-width: 765px) {
   footer {
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     height: 114px;
@@ -538,11 +541,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 17px;
-}
-.loader-wrapper .loader-content .top-line {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .loader-wrapper .loader-content .logo-loader {
   width: 160px;
